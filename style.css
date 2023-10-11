@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 80px;
+}
+
+.headerList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+main{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)),
+    url(https://sandermechanical.com/wp-content/uploads/2015/08/Commercial-Air-Conditioning.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.main-logo{
+    border: 2px solid white;
+    width: 300px;
+}
+
+.aboutUs{
+    height: 600px;
+    font-size: 30px;
+    padding: 20px 150px;
+    gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.employeeImg{
+    height: 300px;
+}
+
+.services{
+    background: rgba(9,50,92,255);
+    padding: 50px 150px;
+    
+    color: white;
+    text-align: center;
+}
+
+.service-list{
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.whyUs{
+    padding: 50px 150px;    
+    color: white;
+    background: linear-gradient(
+        rgba(194,39,47,.9),
+        rgba(194,39,47,.9)),
+        url(images/tools.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
