@@ -1,9 +1,34 @@
 *{
     box-sizing: border-box;
+    /* border: solid 2px lime; */
+    font-family: 'Tilt Neon';
+}
+
+h1{
+    font-size: 60px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5, h5 > a{
+    font-size: 20px;
+}
+
+h5 > a{
+    color: white;
+}
+
+p{
+    font-size: 18px;
 }
 
 .header{
-    border: 2px solid black;
     display: flex;
     justify-content: space-between;
     padding: 1px 80px;
@@ -14,6 +39,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .logo{
@@ -39,13 +69,13 @@ main{
 }
 
 .main-logo{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 300px;
 }
 
-.aboutUs{
-    height: 600px;
-    font-size: 30px;
+#aboutUs{
+    min-height: 600px;
+    
     padding: 20px 150px;
     gap: 60px;
     display: flex;
@@ -57,7 +87,7 @@ main{
     height: 300px;
 }
 
-.services{
+#services{
     background: rgba(9,50,92,255);
     padding: 50px 150px;
     
@@ -71,16 +101,49 @@ main{
     justify-content: center;
     margin-top: 50px;
 
+
 }
 
-.whyUs{
+#whyUs{
     padding: 50px 150px;    
     color: white;
     background: linear-gradient(
         rgba(194,39,47,.9),
         rgba(194,39,47,.9)),
         url(images/tools.jpg);
-    height: 500px;
+    min-height: 500px;
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+footer{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+
+}
+
+.service-areas{
+    /* border: 2px solid red; */
+    text-align: center;
+    
+    
+}
+.service-areas > ul{
+    list-style-type: none;
+    column-count: 2;
+}
+
+@media (max-width: 1024px){
+
+    #aboutUs{
+        display: inline-block;
+        padding: 10px 50px;
+    }
+    .service-list{
+        flex-wrap: wrap;
+    }
+
 }
